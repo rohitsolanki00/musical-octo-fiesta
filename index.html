@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff0f5" />
+  <title>Paro ♥ Ladduuu — Our Little Love World</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Home"><span class="brand-heart">♥</span> paro <i>×</i> ladduuu</a>
+    <button class="music-btn" id="musicBtn" aria-label="Toggle music">♫ <span>little tune</span></button>
+  </header>
+
+  <main>
+    <section class="page active" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">A tiny universe made just for us ✦</p>
+        <h1>Hey, <span>Paro</span>!<br/>This little world is <em>ours.</em></h1>
+        <p class="intro">Rohit ki taraf se uski favourite person ke liye — ek chhota sa digital hug. 💗</p>
+        <div class="hero-actions">
+          <button class="primary-btn" data-go="letter">Open my heart <span>↗</span></button>
+          <button class="soft-btn" data-go="game">Play our mini game ✨</button>
+        </div>
+        <div class="tiny-note"><span class="sparkle">✦</span> made with love, by your Ladduuu</div>
+      </div>
+      <div class="hero-art">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="floating-heart heart-a">♥</div><div class="floating-heart heart-b">♡</div>
+        <div class="anime-couple" aria-label="Cute anime-style boy and girl illustration">
+          <div class="character girl">
+            <div class="hair hair-back"></div><div class="body"></div><div class="neck"></div>
+            <div class="face"><span class="bangs"></span><i class="eye eye-left"></i><i class="eye eye-right"></i><i class="blush blush-left"></i><i class="blush blush-right"></i><span class="smile"></span></div>
+            <div class="hair hair-front"></div><div class="bow">✦</div>
+          </div>
+          <div class="character boy">
+            <div class="hair hair-back"></div><div class="body"></div><div class="neck"></div>
+            <div class="face"><span class="bangs"></span><i class="eye eye-left"></i><i class="eye eye-right"></i><i class="blush blush-left"></i><i class="blush blush-right"></i><span class="smile"></span></div>
+            <div class="hair hair-front"></div>
+          </div>
+          <div class="couple-heart">♥</div>
+        </div>
+        <div class="art-caption"><span>♡</span> Pratigya & Rohit <span>♡</span></div>
+      </div>
+      <div class="scroll-cue">SCROLL A LITTLE <span>↓</span></div>
+    </section>
+
+    <section class="page letter-page" id="letter">
+      <div class="section-kicker">01 / a little love letter</div>
+      <div class="letter-card">
+        <div class="letter-stamp">for<br/><b>Paro</b> ♥</div>
+        <p class="script-line">Dear meri Paro,</p>
+        <h2>Tum meri favourite<br/><span>notification</span> ho. 💌</h2>
+        <p class="letter-text">Pratigya, tum meri life ka woh pyaara sa hissa ho jisse normal din bhi special lagne lagta hai. Tumhari smile, tumhari baatein, aur tumhara mujhe “Ladduuu” bulana — sab mere liye precious hai.</p>
+        <p class="letter-text">Main chahta hoon ki tum hamesha khush raho, apne dreams poore karo, aur yaad rakho ki tum bahut special ho. Distance ho ya busy day, meri care tumhare saath hai. 💗</p>
+        <p class="signoff">Always cheering for you, <span>Rohit (your Ladduuu)</span></p>
+        <button class="primary-btn" id="openSecret">One tiny secret <span>♡</span></button>
+        <p class="secret-message" id="secretMessage">Psst… agar mujhe phir se choose karna hota, toh main phir tumhari hi team mein hota. 🫶</p>
+      </div>
+      <div class="page-nav"><button class="text-btn" data-go="home">← Back to our world</button><button class="primary-btn" data-go="game">Next: our game →</button></div>
+    </section>
+
+    <section class="page game-page" id="game">
+      <div class="section-kicker">02 / the little love quest</div>
+      <h2 class="game-heading">Collect the <span>hearts</span>, Paro! ♡</h2>
+      <p class="game-sub">Tap the floating hearts before they disappear. Let’s see how much love you can catch!</p>
+      <div class="game-stats"><div><small>HEARTS CAUGHT</small><strong id="score">00</strong></div><div><small>TIME LEFT</small><strong><span id="time">20</span>s</strong></div><div><small>LOVE LEVEL</small><strong id="level">♡</strong></div></div>
+      <div class="game-board" id="gameBoard">
+        <div class="board-hint" id="boardHint"><span>♡</span><b>Ready, Paro?</b><small>Press start and catch the hearts!</small></div>
+      </div>
+      <div class="game-controls"><button class="primary-btn" id="startGame">Start our game ✨</button><button class="soft-btn" id="resetGame">Reset ↻</button></div>
+      <div class="result-card" id="resultCard"><div class="result-icon">💗</div><h3 id="resultTitle">A little love, a lot of smiles.</h3><p id="resultText">Every heart is a tiny reminder: you are loved.</p><button class="text-btn" id="playAgain">Play again ↻</button></div>
+      <div class="page-nav"><button class="text-btn" data-go="letter">← Read my letter again</button><button class="primary-btn" data-go="home">Back to home ♥</button></div>
+    </section>
+  </main>
+
+  <footer><span>made for Pratigya</span><span>with love, Rohit ♥</span></footer>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="assets/script.js"></script>
+</body>
+</html>
